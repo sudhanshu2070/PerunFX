@@ -8,3 +8,10 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+/*
+| Behavior                 | Why                                                             |
+| ------------------------ | --------------------------------------------------------------- |
+| `console.log` runs twice | React.StrictMode re-runs `useEffect` once in dev to detect bugs |
+| Happens in dev only      | Production build runs effects only once as expected             |
+*/
