@@ -30,7 +30,7 @@ const FileUpload = () => {
 
     try {
       setUploading(true); // Set uploading status to true
-      const response = await axios.post('http://localhost:500/', formData, {
+        const response = await axios.post('http://localhost:5000/api/v1/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
