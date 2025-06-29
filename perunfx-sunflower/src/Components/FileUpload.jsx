@@ -13,7 +13,7 @@ const FileUpload = () => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
       setFile(selectedFile);
-      setResult(null); // Clear previous result on new file selection
+      setResult(null); // Clearing previous result on new file selection
       setError(null);
     }
   };
@@ -35,11 +35,11 @@ const FileUpload = () => {
           'Content-Type': 'multipart/form-data',
         },
       });
-      setResult(response.data); // Set the response result
+      setResult(response.data); 
     } catch (err) {
-      setError('Failed to upload file! Please try again.'); // Set error if upload fails
+      setError('Failed to upload file! Please try again.'); 
     } finally {
-      setUploading(false); // Set uploading status to false
+      setUploading(false); 
     }
   };
 
@@ -66,7 +66,7 @@ const FileUpload = () => {
       {result && (
         <div className="result">
           <h3>Upload Result:</h3>
-          <pre>{JSON.stringify(result, null, 2)}</pre> {/* Display the result as JSON */}
+          <pre>{JSON.stringify(result, null, 2)}</pre>
         </div>
       )}
 
