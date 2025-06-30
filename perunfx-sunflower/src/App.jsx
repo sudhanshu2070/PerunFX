@@ -3,6 +3,7 @@ import './App.css'
 import PropComp from './Components/PropComp';
 import LifeCycleComp from './Components/LifeCycleComp';
 import FileUpload from './Components/FileUpload';
+import GridGame from './Components/GridGame';
 
 function App() {
   const [count, setCount] = useState(0)
