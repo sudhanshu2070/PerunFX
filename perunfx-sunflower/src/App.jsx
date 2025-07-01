@@ -5,6 +5,7 @@ import LifeCycleComp from './Components/LifeCycleComp';
 import FileUpload from './Components/FileUpload';
 import GridGame from './Components/GridGame';
 import ThemeContext from './utils/ThemeContext';
+import UseCompOne from './Components/UseContextOne';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         {/* <LifeCycleComp/> */}
         {/* <FileUpload /> */}
         <GridGame />
+        <UseCompOne />
       </div>
       </ThemeContext.Provider>
   )
